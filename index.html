@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Acumetis waste management training: why waste management matters.">
+  <title>Why Waste Management Matters | Acumetis</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main id="top">
+    <div class="overall-progress" aria-live="polite">
+      <div class="progress-inner">
+        <div class="progress-label" id="progressLabel">0 of 3 sections explored</div>
+        <div class="progress-track">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="hero-tag">Waste Management at Acumetis</span>
+          <h1>The most sustainable waste is the waste that is never created.</h1>
+          <p class="hero-subtitle">Waste management is about more than recycling.</p>
+          <p class="hero-copy">
+            The way we purchase, use, and dispose of materials affects the
+            environment, human health, and the organizations we serve.
+          </p>
+          <a class="primary-link" href="#environment">Explore why it matters ↓</a>
+        </div>
+
+        <div class="hero-graphic" aria-hidden="true">
+          <img
+            class="hero-earth-image"
+            src="./earth-realistic.jpg"
+            alt=""
+          >
+          <div class="hero-orbit orbit-one">♻️</div>
+          <div class="hero-orbit orbit-two">📦</div>
+          <div class="hero-orbit orbit-three">🌱</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section environment-section" id="environment">
+      <div class="container">
+        <p class="eyebrow light">Why does it matter to the environment?</p>
+        <h2>Waste creates impacts long before it reaches the bin.</h2>
+        <p class="section-intro light-copy">
+          Select each stage to follow the environmental chain created when
+          useful materials are discarded unnecessarily.
+        </p>
+
+        <div class="impact-chain">
+          <button
+            class="chain-step"
+            type="button"
+            data-copy="When waste is sent to landfill unnecessarily, valuable materials are lost."
+          >
+            <span class="chain-icon" aria-hidden="true">🗑️</span>
+            <span>Landfill</span>
+          </button>
+
+          <span class="chain-arrow" aria-hidden="true">→</span>
+
+          <button
+            class="chain-step"
+            type="button"
+            data-copy="Those materials must be replaced with new raw materials."
+          >
+            <span class="chain-icon" aria-hidden="true">⛏️</span>
+            <span>Raw Materials</span>
+          </button>
+
+          <span class="chain-arrow" aria-hidden="true">→</span>
+
+          <button
+            class="chain-step"
+            type="button"
+            data-copy="Extracting and transporting raw materials requires energy, water, and natural resources."
+          >
+            <span class="chain-icon" aria-hidden="true">🚛</span>
+            <span>Extraction &amp; Transport</span>
+          </button>
+
+          <span class="chain-arrow" aria-hidden="true">→</span>
+
+          <button
+            class="chain-step"
+            type="button"
+            data-copy="Manufacturing replacement materials contributes to greenhouse gas emissions."
+          >
+            <span class="chain-icon" aria-hidden="true">🏭</span>
+            <span>Manufacturing</span>
+          </button>
+        </div>
+
+        <div class="chain-copy" id="chainCopy" aria-live="polite">
+          Select a stage to see how unnecessary waste creates a chain of environmental impacts.
+        </div>
+
+        <div class="solution-band">
+          <div><span aria-hidden="true">➖</span><strong>Reduce</strong></div>
+          <div><span aria-hidden="true">🔁</span><strong>Reuse</strong></div>
+          <div><span aria-hidden="true">♻️</span><strong>Recycle</strong></div>
+          <p>
+            Proper waste reduction, reuse, and recycling help conserve resources
+            and reduce environmental impacts.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section health-section" id="health">
+      <div class="container">
+        <p class="eyebrow">Why does it matter to human health?</p>
+        <h2>Environmental health and human health are closely connected.</h2>
+        <p class="section-intro">
+          Poorly managed waste can contribute to air, water, and soil pollution,
+          affecting both ecosystems and communities.
+        </p>
+
+        <div class="earth-explorer">
+          <div class="interactive-earth-wrap">
+            <div class="cloud-shape" aria-hidden="true">
+              <span class="cloud-puff puff-one"></span>
+              <span class="cloud-puff puff-two"></span>
+              <span class="cloud-puff puff-three"></span>
+              <span class="cloud-base"></span>
+            </div>
+
+            <img
+              class="interactive-earth-image"
+              src="./earth-realistic.jpg"
+              alt="View of Earth from space showing oceans and green land masses"
+            >
+
+            <button
+              class="earth-hotspot hotspot-air active"
+              type="button"
+              data-title="Air Pollution"
+              data-text="When waste is burned improperly or decomposes in landfill, pollutants and greenhouse gases can be released into the air. These emissions can worsen local air quality and contribute to respiratory and cardiovascular health risks, especially for communities located near waste-handling facilities."
+            >
+              <span aria-hidden="true">☁️</span>
+              Air
+            </button>
+
+            <button
+              class="earth-hotspot hotspot-water"
+              type="button"
+              data-title="Water Contamination"
+              data-text="Chemicals and contaminants from poorly managed waste can enter waterways through runoff or leaching. This can affect drinking water sources, aquatic ecosystems, and the safety of water used by surrounding communities."
+            >
+              <span aria-hidden="true">💧</span>
+              Water
+            </button>
+
+            <button
+              class="earth-hotspot hotspot-soil"
+              type="button"
+              data-title="Soil Pollution"
+              data-text="Hazardous or contaminated waste can introduce chemicals and other pollutants into soil. These pollutants may persist over time, affect plant and animal life, and move through food systems or groundwater."
+            >
+              <span aria-hidden="true">🌱</span>
+              Soil
+            </button>
+          </div>
+
+          <div class="earth-info-panel" aria-live="polite">
+            <span class="panel-kicker">Pollution pathway</span>
+            <h3 id="earthInfoTitle">Air Pollution</h3>
+            <p id="earthInfoText">
+              When waste is burned improperly or decomposes in landfill,
+              pollutants and greenhouse gases can be released into the air.
+              These emissions can worsen local air quality and contribute to
+              respiratory and cardiovascular health risks, especially for
+              communities located near waste-handling facilities.
+            </p>
+          </div>
+        </div>
+
+        <div class="fact-feature health-fact">
+          <div class="fact-visual">
+            <span class="fact-ring ring-one"></span>
+            <span class="fact-ring ring-two"></span>
+            <span class="fact-heart" aria-hidden="true">❤️</span>
+          </div>
+
+          <div class="fact-content">
+            <span class="fact-kicker">Human Health Impact</span>
+            <span class="fact-number">13 million</span>
+            <p>
+              According to the World Health Organization, environmental factors
+              such as air pollution, water contamination, and chemical exposure
+              contribute to an estimated 13 million deaths globally each year.
+            </p>
+            <p class="fact-note">
+              While waste is only one of many environmental factors, responsible
+              waste management plays an important role in reducing pollution and
+              protecting community health.
+            </p>
+          </div>
+        </div>
+
+        <p class="health-closing">
+          Effective waste management helps reduce pollution and supports healthier
+          environments for the people who live and work in them.
+        </p>
+      </div>
+    </section>
+
+    <section class="section industry-section" id="industry">
+      <div class="container">
+        <p class="eyebrow light">Why does it matter to healthcare and our clients?</p>
+        <h2>The industries we serve have a significant environmental footprint.</h2>
+
+        <div class="industry-intro">
+          <p>
+            For organizations in the healthcare and life sciences industries,
+            environmental health and human health are closely connected.
+          </p>
+          <p>
+            Many of Acumetis’ clients operate in the pharmaceutical,
+            biotechnology, and healthcare sectors, where sustainability
+            expectations continue to grow.
+          </p>
+        </div>
+
+        <div class="industry-story">
+          <div class="industry-column impact-column">
+            <span class="story-label">Industry impact</span>
+            <div class="story-icon" aria-hidden="true">🏥</div>
+            <h3>Healthcare &amp; Life Sciences</h3>
+            <p>
+              The sector relies on extensive products, packaging, materials,
+              and global supply chains.
+            </p>
+          </div>
+
+          <div class="story-connector" aria-hidden="true">→</div>
+
+          <div class="industry-column expectations-column">
+            <span class="story-label">Growing expectations</span>
+            <div class="priority-cloud">
+              <button class="priority-pill" type="button">Waste</button>
+              <button class="priority-pill" type="button">Resource Use</button>
+              <button class="priority-pill" type="button">Pollution Prevention</button>
+            </div>
+            <p>
+              Organizations such as the Pharmaceutical Supply Chain Initiative
+              (PSCI) encourage companies to manage environmental impacts,
+              including waste, resource use, and pollution prevention.
+            </p>
+          </div>
+
+          <div class="story-connector" aria-hidden="true">→</div>
+
+          <div class="industry-column acumetis-column">
+            <span class="story-label">Why it matters to Acumetis</span>
+            <div class="story-icon">A</div>
+            <h3>Alignment with Our Clients</h3>
+            <div class="evaluation-tags">
+              <span>Assessments</span>
+              <span>Reporting</span>
+              <span>Questionnaires</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="client-copy">
+          <p>
+            As a result, many clients evaluate suppliers on their sustainability
+            performance through assessments, reporting requirements, and supplier
+            questionnaires.
+          </p>
+          <p>
+            By implementing responsible waste management practices in our own
+            operations, Acumetis demonstrates its commitment to the sustainability
+            expectations of the industries we serve.
+          </p>
+        </div>
+
+        <div class="fact-feature industry-fact">
+          <div class="ranking-visual">
+            <span class="ranking-label">If healthcare were a country</span>
+            <span class="ranking-number">5th</span>
+            <span class="ranking-caption">largest emitter</span>
+          </div>
+
+          <div class="fact-content">
+            <span class="fact-kicker">Healthcare Sustainability Fact</span>
+            <span class="fact-number">4.4%–5.2%</span>
+            <p>
+              The global healthcare sector is responsible for approximately
+              4.4%–5.2% of worldwide greenhouse gas emissions.
+            </p>
+            <p class="fact-note">
+              If healthcare were a country, it would rank as the fifth-largest
+              emitter in the world.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section summary-section">
+      <div class="container">
+        <p class="eyebrow">Bringing it together</p>
+        <h2>Waste management matters from every perspective.</h2>
+
+        <div class="summary-grid">
+          <div><span aria-hidden="true">🌎</span><strong>Environment</strong></div>
+          <div><span aria-hidden="true">❤️</span><strong>Human Health</strong></div>
+          <div><span aria-hidden="true">🏥</span><strong>Healthcare &amp; Our Clients</strong></div>
+        </div>
+
+        <p class="summary-copy">
+          Waste management matters because the choices we make affect the
+          environment, the health of our communities, the industries we support,
+          and the clients we serve.
+        </p>
+
+        <button class="complete-button" id="completeButton" type="button">
+          Complete this module
+        </button>
+
+        <div class="complete-message" id="completeMessage" aria-live="polite">
+          Module complete. You’re ready to continue.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
